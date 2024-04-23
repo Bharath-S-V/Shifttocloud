@@ -1,0 +1,259 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for header */
+header {
+  background-color: rgba(15, 79, 121, 255);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Style for logo */
+.logo {
+  margin-right: 10px;
+}
+
+/* Style for left menu */
+.left-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for right menu */
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for ul */
+.ul1 {
+  list-style-type: none;
+  display: flex;
+}
+
+.header-ul li {
+  padding: 10px;
+}
+
+.header-ul1 li {
+  padding: 10px;
+}
+
+/* Hide fa-bars in desktop view */
+.fa-bars {
+  display: none;
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 768px) {
+  .header-ul,
+  .header-ul1 {
+    display: none;
+  }
+  .fa-bars {
+    display: inline-block;
+  }
+}
+
+.navigate {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background: rgb(227, 245, 253);
+  background: linear-gradient(
+    86deg,
+    rgba(227, 245, 253, 1) 0%,
+    rgba(227, 245, 253, 0.3617822128851541) 50%,
+    rgba(227, 245, 253, 1) 100%
+  );
+}
+
+.navigate p {
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add some spacing between paragraphs and icon */
+}
+
+.navigate i {
+  margin-left: 5px; /* Add some spacing between icon and paragraph */
+}
+
+.banner {
+  text-align: center;
+  padding: 50px 20px; /* Adjust padding as needed */
+  background: rgb(227, 245, 253);
+  background: linear-gradient(
+    86deg,
+    rgba(227, 245, 253, 1) 0%,
+    rgba(227, 245, 253, 0.3617822128851541) 50%,
+    rgba(227, 245, 253, 1) 100%
+  );
+}
+
+.banner h2 {
+  margin-bottom: 10px; /* Adjust spacing between title and content */
+}
+
+.banner h4 {
+  margin-bottom: 20px; /* Adjust spacing between paragraphs */
+}
+
+.banner span {
+  font-size: 40px;
+  font-weight: bold;
+  color: #104a69;
+}
+
+.btn1 {
+  border-radius: 50px;
+}
+
+.btn2 {
+  border-radius: 50px;
+}
+
+.icon-heading-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon-heading {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.icon-heading img {
+  width: 50px; /* Adjust the width of the icon as needed */
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid black; /* Add a border to the icon */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .icon-heading-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .icon-heading {
+    margin-bottom: 10px; /* Add space between rows */
+  }
+}
+
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.item img {
+  width: 25px; /* Adjust the width of the image as needed */
+  margin-right: 10px;
+}
+
+.card1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card1 span {
+  font-size: 24px;
+  text-align: center;
+}
+
+.card-img-overlay {
+  left: 40%;
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 768px) {
+  .card1 {
+    font-size: 12px;
+    display: none !important;
+  }
+
+  .card1 span {
+    font-size: 15px;
+  }
+  .card img {
+    display: none;
+  }
+  .card-img-overlay {
+    left: 0%;
+  }
+}
+
+.background-image {
+  background-image: url('bg-how-does-office365-mailbox-work.jpg'); /* Replace 'your-image-url.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  border: none;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #20242f;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer h6 {
+  color: #fff;
+}
+
+.footer-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-ul li {
+  margin-bottom: 10px;
+}
+
+.ul2 {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ul2 li {
+  display: inline;
+  color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
